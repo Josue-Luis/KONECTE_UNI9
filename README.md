@@ -1,0 +1,1 @@
+A Konecte é muito mais do que uma operadora de chips; é uma empresa movida pelo propósito de transformar vidas por meio da conexão. Desde sua criação, em 2018, mantém firme o compromisso de levar internet de qualidade, acessível e inovadora para todos os cantos do país
