@@ -1,0 +1,423 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #000000 ;
+    
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .container {
+    max-width: 1700px; 
+    margin: 0 auto;
+    background-color: #ffffff; 
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    min-height: 100vh; 
+  }
+  
+  .main-wrapper {
+    background-color: #000000; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  
+ 
+  .top-bar {
+    background-color: #000000;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    position: relative;
+  }
+  
+  
+  
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .logo img {
+    height: 100px; 
+    transform: scale(1.2);
+  }
+  
+  
+  
+  
+
+ .slider {
+  width: 101%;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 0;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  transform: translateX(0);
+  animation: slide 20s infinite;
+}
+
+.slide {
+  min-width: 100%;
+  height: 550px;
+  flex-shrink: 0;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+  
+  
+
+  .company-name {
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .company-name h1 {
+    font-size: 3.5rem;
+    color: #222;
+    font-family: "Poetsen One", sans-serif;
+    text-align: center;
+  }
+  
+  .company-name h1 mark {
+    background-color: #358fda; 
+    color: white;              
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    line-height: 1.5;
+  }
+
+  .section-mvv {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 40px;
+  }
+  
+  .bloco {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  
+  .mvv-img img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mvv-texto {
+    flex: 1;
+    max-width: 800px;
+  }
+  
+  .mvv-texto h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .mvv-texto p {
+    list-style-type: disc;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #444;
+  }
+  .mvv-texto li {
+    font-size: 20px;
+  }
+  
+
+  .simulador-plano {
+    background-color: #f1f1e8;
+    border-left: 6px solid #358fda;
+    padding: 50px;
+    margin: 40px 0 40px 40px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.08);
+    min-height: 300px;
+  }
+  
+  
+  .simulador-plano h2 {
+    text-align: center;
+    font-size: 2.1rem;
+    margin-bottom: 40px;
+    color: #222;
+  }
+  
+  .simulador-plano label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  .simulador-plano input {
+    padding: 8px;
+    font-size: 16px;
+    width: 90%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .simulador-plano button {
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: #358fda;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+  }
+  
+  .simulador-plano button:hover {
+    background-color: #2b74bd;
+  }
+  
+  .simulador-plano #resultado {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #111;
+  }
+
+  .simuladores-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .aviso-simulacao {
+    background-color: #fff7d6;
+    border-left: 6px solid #f5b100;
+    padding: 20px;
+    margin: 0 40px 60px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #222;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+  }
+
+  @media (max-width: 1024px) {
+    .bloco, .bloco.reverso {
+      flex-direction: column !important;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .mvv-img img, .mvv-texto {
+      max-width: 100%;
+    }
+  
+    .logo img {
+      height: 80px;
+    }
+  
+    .email {
+      font-size: 16px;
+    }
+  
+    .icons a img {
+      height: 25px;
+    }
+  
+    .slider {
+      height: 300px;
+    }
+  
+    .slide {
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .top-bar {
+      flex-direction: column;
+      height: auto;
+      gap: 10px;
+      padding: 10px;
+    }
+  
+    .logo {
+      position: static;
+      transform: none;
+    }
+  
+    .simuladores-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .simulador-plano {
+      width: 90%;
+      margin: 20px auto;
+    }
+  
+    .company-name h1 {
+      font-size: 2.2rem;
+    }
+  }
+
+
+  
+
+  .link-equipe {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 32px;
+    margin-right: 25px;
+    transition: color 0.3s ease;
+  }
+  
+  .link-equipe:hover {
+    color: #358fda;
+  }
+  
+
+
+  .sobre-empresa {
+    background-color: #f9f9f9;
+    border-left: 6px solid #358fda;
+    padding: 40px;
+    margin: 60px 40px;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+    text-align: justify;
+  }
+  
+  .sobre-empresa h2 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  .sobre-empresa p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.7;
+  }
+  
+  .ler-mais {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 16px;
+    background-color: #358fda;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .ler-mais:hover {
+    background-color: #2b74bd;
+  }
+  
+  .certificados {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .certificados img {
+    width: 150px;
+    height: auto;
+  }
+  
+
+  .bottom-bar {
+    background-color: #000000;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    position: relative;
+  }
+  
+  
+  .bottom-bar .email {
+    color: #fff;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .bottom-bar .email a img {
+    height: 40px;
+    margin-right: 8px;
+    filter: brightness(0) invert(1);
+  }
+  
+  .bottom-bar .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .bottom-bar .logo img {
+    height: 80px;
+  }
+  
+  .bottom-bar .icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .bottom-bar .icons a img {
+    height: 30px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+  }
+  
+  .bottom-bar .icons a:hover img {
+    transform: scale(1.2);
+  }
+  
